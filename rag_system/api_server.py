@@ -498,7 +498,7 @@ class AdvancedRagApiHandler(http.server.BaseHTTPRequestHandler):
         except Exception as e:
             self.send_json_response({"error": f"Server error: {str(e)}"}, status_code=500)
 
-        self.finish()
+        # self.finish()
 
     def handle_index(self):
         """Triggers the document indexing pipeline for specific files."""

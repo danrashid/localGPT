@@ -10,6 +10,7 @@ sudo service ollama stop
 sudo systemctl disable ollama.service
 OLLAMA_HOST=0.0.0.0 ollama serve
 ollama pull qwen3:0.6b
+ollama pull qwen3:4b
 ollama pull qwen3:8b
 ```
 
@@ -50,6 +51,5 @@ See [api_reference.md](./Documentation/api_reference.md)
 ## Custodial
 
 ```
-sudo chown -R $USER:$USER ~/repos/localGPT/
 echo "" > backend/chat_data.d
 ```
