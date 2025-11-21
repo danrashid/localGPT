@@ -42,7 +42,11 @@ tail -f logs/*.log
 
 ## Remote access
 
-`ssh -R 3000:localhost:3000 -R 8000:localhost:8000 -R 8001:localhost:8001 client_hostname`
+`ssh -R 3000:localhost:3000 -R 8000:localhost:8000 -R 8001:localhost:8001 hostname`
+
+or
+
+`ssh -L 3000:hostname:3000 -L 8000:hostname:8000 -L 8001:hostname:8001 hostname`
 
 ## Memory tweaks
 
